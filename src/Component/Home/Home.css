@@ -1,0 +1,48 @@
+
+.navbar{
+  background-color: none;
+}
+a{
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.brand{
+  font-weight: 800;
+  font-size: 30px;
+}
+header {
+  margin-top: 20px;
+ 
+  
+}
+#navbarSupportedContent{
+  justify-content: flex-end;
+}
+.nav-link ,a{
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-decoration: none !important;
+
+}
+.bannerTitle{
+  font-weight: 800;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+
+.services{
+  text-align: center;
+  margin-top: 200px;
+}
+@media (max-width : 992px) {
+  .services{
+   
+    margin-top: 50px;
+  }
+  
+}

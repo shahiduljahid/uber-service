@@ -20,6 +20,7 @@ const Header = () => {
       }).catch((error) => {
         // An error happened.
       });
+      sessionStorage.removeItem('token')
   }
 
   return (
@@ -53,7 +54,7 @@ const Header = () => {
           <a href  className=" nav-link border border-primary rounded">Hi {loggedInPassenger.name}</a>
         )}
 
-        {loggedInPassenger.email ? (
+        {(loggedInPassenger.email  || sessionStorage.getItem('token')) ? (
           <Link class="nav-link" to={"/login"}>
             <button onClick={()=>hangleSignOut()} className="btn btn-danger">Log out</button>
           </Link>

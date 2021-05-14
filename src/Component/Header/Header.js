@@ -56,7 +56,7 @@ const Header = () => {
 
         {(loggedInPassenger.email  || sessionStorage.getItem('token')) ? (
           <Link class="nav-link" to={"/login"}>
-            <button onClick={()=>hangleSignOut()} className="btn btn-danger">Log out</button>
+            <button onClick={hangleSignOut} className="btn btn-danger">Log out</button>
           </Link>
         ) : (
           <Link class="nav-link" to={"/login"}>
